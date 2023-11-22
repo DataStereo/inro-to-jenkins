@@ -1,6 +1,6 @@
 node {
     stage('Build') {
-        docker.image('maven:3.9.5-eclipse-temurin-17-alpine').inside {
+        docker.image('3.9.5-amazoncorretto-8-debian-bookworm').inside {
             sh 'mvn --version'
         }
     }
