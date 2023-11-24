@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'postgres:11.22-bullseye' } }
+    agent { docker { image 'docker/getting-started' } }
     stages {
         stage('build') {
             steps {
