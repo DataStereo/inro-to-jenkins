@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'docker/getting-started' } }
+   agent any
     stages {
-        stage('build') {
+        stage('first') {
             steps {
-                sh 'ls'
+               echo 'hello world'
             }
         }
     }
