@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:lts-slim' } }
+    agent { docker { image 'postgres:11.22-bullseye' } }
     stages {
         stage('build') {
             steps {
