@@ -1,6 +1,6 @@
 node {
     stage('Build') {
-        docker.image('3.9.5-amazoncorretto-8-debian-bookworm').inside {
+        docker.image('node').inside {
             sh 'mvn --version'
         }
     }
