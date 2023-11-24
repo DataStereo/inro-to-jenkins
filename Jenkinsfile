@@ -1,7 +1,10 @@
-node {
-    stage('Build') {
-        docker.image('node').inside {
-            sh 'mvn --version'
+pipeline {
+    agent { docker { image 'node:lts-slim' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
+            }
         }
     }
 }
