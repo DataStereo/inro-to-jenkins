@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:3.9.5-eclipse-temurin-17-alpine' } }
+    agent { docker { image '3.9.5-amazoncorretto-8-debian-bookworm' } }
     stages {
         stage('build') {
             steps {
