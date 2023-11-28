@@ -20,8 +20,8 @@ pipeline {
     post {
     success {
         mail to: 'morozov89oleg@gmail.com',
-             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-             body: "Something is wrong with ${env.BUILD_URL}"
+             subject: "Success Pipeline: ${currentBuild.fullDisplayName}",
+             body: "Build config ${env.BUILD_URL}"
         }
     }
 }
